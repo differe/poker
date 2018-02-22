@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        html,body{
+            width:100%;
+            height: 100%;
+        }
+        body{
+            background: url('1.jpg') center / cover;
+        }
+        .zhuozi{
+            width: 700px;
+            height: 600px;
+            position: absolute;
+            top:calc(50% - 300px);
+            left:calc(50% - 300px);
+        }
+        .box{
+            width:100px;
+            height:140px;
+            position: absolute;
+            top:0;
+            left: calc(50% - 40px);
+            opacity: 0;
+            background-position: center;
+            background-size: cover;
+        }
+        .active{
+            box-shadow: 0 0 20px 3px #000000;
+        }
+        div[class*=btn]{
+            width:80px;
+            height:40px;
+            border-radius: 10px;
+            position: absolute;
+            left: calc(50% + 10px);
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+        }
+        div.btnR{
+            background: #ff5a6e;
+            bottom:100px;
+        }
+        div.btnL{
+            background: #ff5a6e;
+            bottom:40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="zhuozi"></div>
+    <div class="btnR"><i class="iconfont icon-xiayiye"></i></div>
+    <div class="btnL"><i class="i   confont icon-shangyiye"></i></div>
+    <script src="poke.js"></script>
+</body>
+</html>
